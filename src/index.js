@@ -5,6 +5,7 @@ import './index.scss';
 const browserRunJsBtn = document.querySelector('#browser-run-js');
 const workerRunJsBtn = document.querySelector('#worker-run-js');
 const doStuffBtn = document.querySelector('#do-stuff');
+const clearDoStuff = document.querySelector('#clear-do-stuff');
 let jsStuff = document.querySelector('#js-stuff');
 let jsStuffText = '';
 
@@ -47,4 +48,9 @@ doStuffBtn.addEventListener('click', () => {
   console.log('doStuffBtn');
   jsStuffText += '" JavaScript Stuff "';
   jsStuff.innerHTML = jsStuffText;
+});
+
+clearDoStuff.addEventListener('click', () => {
+  console.log('doStuffBtn');
+  jsStuff.innerHTML = '';
 });
