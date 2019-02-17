@@ -1,2 +1,36 @@
+@import "@material/layout-grid/mdc-layout-grid";
 @import "../node_modules/@material/fab/mdc-fab";
 // @import "../node_modules/@material/ripple/common.scss";
+
+.mdc-layout-grid__inner {
+  // border: 1px solid red;
+}
+
+.mdc-layout-grid__cell {
+  // border: 1px solid green;
+}
+
+.rotate > span:first-child {
+  animation: spin .75s infinite linear;
+}
+.paused > span:first-child {
+  animation-play-state: paused;
+}
+
+.mdc-fab--extended {
+  width: 100%;
+}
+
+#js-stuff {
+  min-height: 100px;
+  border: 2px dashed lightblue;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

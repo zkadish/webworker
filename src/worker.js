@@ -4,7 +4,7 @@ self.onmessage = (e) => {
   console.log('onmessage:', e.data);
   // blocking code
   if (e.data === 'start') {
-    const bigValue = 10000;
+    const bigValue = 100000;
     let computedValue = 0;
     for (let i = 0;i < bigValue;i++) {
       console.log(computedValue += Math.random())

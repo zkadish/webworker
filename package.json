@@ -13,6 +13,7 @@
   "dependencies": {
     "@material/button": "^0.44.0",
     "@material/fab": "^0.44.0",
+    "@material/layout-grid": "^0.41.0",
     "css-loader": "^2.1.0",
     "node-sass": "^4.11.0",
     "sass-loader": "^7.1.0",

@@ -18,6 +18,7 @@ function registerWorker() {
     const { data } = e;
     if (data.state === 'done') {
       console.log('terminate the worker')
+      workerRunJsBtn.classList.add('paused');
       worker.terminate();
     }
   }
@@ -32,21 +33,24 @@ function longRunningProcess() {
   for (let i = 0;i < bigValue;i++) {
     console.log(computedValue += Math.random())
   }
+  browserRunJsBtn.classList.add('paused');
 }
 
 browserRunJsBtn.addEventListener('click', () => {
   console.log('browserRunJsBtn');
+  browserRunJsBtn.classList.remove('paused');
   longRunningProcess();
 });
 
 workerRunJsBtn.addEventListener('click', () => {
   console.log('workerRunJsBtn');
+  workerRunJsBtn.classList.remove('paused');
   registerWorker();
 });
 
 doStuffBtn.addEventListener('click', () => {
   console.log('doStuffBtn');
-  jsStuffText += '" JavaScript Stuff "';
+  jsStuffText += ' "JavaScript Stuff" ';
   jsStuff.innerHTML = jsStuffText;
 });
 
