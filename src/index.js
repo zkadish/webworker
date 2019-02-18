@@ -6,7 +6,8 @@ const browserRunJsBtn = document.querySelector('#browser-run-js');
 const workerRunJsBtn = document.querySelector('#worker-run-js');
 const doStuffBtn = document.querySelector('#do-stuff');
 const clearDoStuff = document.querySelector('#clear-do-stuff');
-let jsStuff = document.querySelector('#js-stuff');
+const jsComputation = document.querySelector('#js-computation');
+const jsStuff = document.querySelector('#js-stuff');
 let jsStuffText = '';
 
 // Worker
