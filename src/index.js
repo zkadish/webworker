@@ -57,5 +57,6 @@ doStuffBtn.addEventListener('click', () => {
 
 clearDoStuff.addEventListener('click', () => {
   console.log('doStuffBtn');
+  jsStuffText = '';
   jsStuff.innerHTML = '';
 });

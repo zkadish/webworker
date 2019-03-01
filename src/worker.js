@@ -6,17 +6,17 @@ self.onmessage = (e) => {
   if (e.data === 'start') {
     const bigValue = 100000;
     let computedValue = 0;
-    for (let i = 0;i < bigValue;i++) {
-      console.log(computedValue += Math.random())
+    for (let i = 0; i < bigValue; i += 1) {
+      console.log(computedValue += Math.random());
     }
-    
+
     self.postMessage({
       state: 'done',
       value: computedValue,
     });
     self.postMessage('done');
   }
-}
+};
 
 // self.addEventListener('message', function(e) {
 //   console.log('message event:', e.data);
